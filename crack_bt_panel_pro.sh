@@ -108,6 +108,9 @@ crack_bt_panel() {
     touch /www/server/panel/data/userInfo.json
     wget -O soft.js https://raw.githubusercontent.com/Shawn-Ji/Crack_BT_Panel/master/soft.js
     mv soft.js /www/server/panel/static/js
+    wget -O system.py https://raw.githubusercontent.com/Shawn-Ji/Crack_BT_Panel/master/system.py && mv system.py /www/server/panel/class
+    wget -O task.py https://raw.githubusercontent.com/Shawn-Ji/Crack_BT_Panel/master/task.py && mv task.py /www/server/panel/class
+    wget -O public.py https://raw.githubusercontent.com/Shawn-Ji/Crack_BT_Panel/master/public.py && mv public.py /www/server/panel/class
     /etc/init.d/bt restart
 }
 
